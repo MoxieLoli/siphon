@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solo Leveling Fitness System - Full Build</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="login-screen">
+    <h1>SOLO LEVELING SYSTEM</h1>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Enter Gate</button>
+  </div>
+
+  <div id="dashboard" style="display:none;">
+    <h2>Welcome, <span id="user-display"></span></h2>
+    <div class="section">
+      <h3>🏋️‍♂️ Rank Workouts</h3>
+      <p id="rank-workout">Loading workout...</p>
+      <button onclick="nextWorkout()">Next Workout</button>
+    </div>
+    <div class="section">
+      <h3>🎯 Daily Quest</h3>
+      <p id="daily-quest">Loading quest...</p>
+      <button onclick="completeQuest()">Finish Quest</button>
+    </div>
+    <div class="section">
+      <h3>⚔️ Dungeon</h3>
+      <p>Start dungeon battle?</p>
+      <button onclick="startDungeon()">Enter Dungeon</button>
+    </div>
+  </div>
+</body>
+</html>
